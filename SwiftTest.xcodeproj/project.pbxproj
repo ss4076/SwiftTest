@@ -110,10 +110,10 @@
 		1B35CFAA21EB5F670054878E /* Menu */ = {
 			isa = PBXGroup;
 			children = (
+				1B2FBDD221ECAD1B0078FAD7 /* GrammerViewController.swift */,
 				1BA0F1C11F9ABA570046B567 /* ClosureViewController.swift */,
 				1B35CFAB21EB5F890054878E /* ExtensionViewController.swift */,
 				1B35CFAD21EB5F980054878E /* ProtocolViewController.swift */,
-				1B2FBDD221ECAD1B0078FAD7 /* GrammerViewController.swift */,
 			);
 			path = Menu;
 			sourceTree = "<group>";
@@ -347,6 +347,8 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-SwiftTest/Pods-SwiftTest-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/JSON/JSON.framework",
 				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
@@ -355,6 +357,8 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",

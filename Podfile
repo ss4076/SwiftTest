@@ -5,5 +5,7 @@ target 'SwiftTest' do
 
 pod "RxSwift"
 pod "RxCocoa"
+pod "JSON"
+pod 'Alamofire', '~> 4.7'
 
 end
