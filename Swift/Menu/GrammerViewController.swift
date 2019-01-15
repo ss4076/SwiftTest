@@ -12,6 +12,12 @@ import JSON
 
 
 class GrammerViewController: UIViewController {
+    @IBOutlet weak var requestUrlLbl: UILabel!
+    @IBOutlet weak var requestBtn: UIButton!
+    
+    @IBOutlet weak var responseCodeLbl: UILabel!
+    @IBOutlet weak var responseMessageLbl: UILabel!
+    
     func makeIncrementor(forIncrement amount: Int)->()->Int {
         var runningTotal = 0
         func incrementor() -> Int {
@@ -82,9 +88,13 @@ class GrammerViewController: UIViewController {
         }
     }
     
+    @IBAction func requestBtnAction(_ sender: Any) {
+        alamofireTest()
+    }
+    
     func alamofireTest() {
         Alamofire.request(
-            "https://openapi.open-platform.or.kr/transfer/withdraw",
+            self.requestUrlLbl.text as String!,
             method: .post,
             parameters: nil/*["deviceId":"G6VVNFVYJCLH", "source":"AGENT", "timestamp":"1543396294327", "shorTimestamp":"1543396294327", "type":"AUTH", "action":"LOGIN","auth":"djpark", "auditLogDesc":"Login Success", "companyKey":"1"]*/,
             encoding: URLEncoding.default,
@@ -99,7 +109,8 @@ class GrammerViewController: UIViewController {
                     let code = response.object(forKey: "rsp_code")
                     let message = response.object(forKey: "rsp_message")
                     print("code: \(String(describing: code)), message: \(String(describing: message))")
-                    
+                    self.responseCodeLbl.text = String(describing: code)
+                    self.responseMessageLbl.text = String(describing: message)
                 } else {
                     print("response: \(response.description)")
                 }
@@ -107,8 +118,6 @@ class GrammerViewController: UIViewController {
     }
     
     override func viewDidLoad() {
-        alamofireTest()
-        
         grammerTest()
         
         let incrementByTen = makeIncrementor(forIncrement: 10)
