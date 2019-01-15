@@ -12,29 +12,26 @@ import JSON
 
 
 class GrammerViewController: UIViewController {
-    
-    override func viewDidLoad() {
-        alamofireTest()
-        
-        grammerTest()
-        
-        
+    func makeIncrementor(forIncrement amount: Int)->()->Int {
+        var runningTotal = 0
+        func incrementor() -> Int {
+            runningTotal += amount
+            return runningTotal
+        }
+        return incrementor
     }
-    func alamofireTest() {
-        Alamofire.request(
-            "https://mguarddev.raonsecure.co.kr:8802/all/insertAuditLogs.do",
-            method: .post,
-            parameters: ["deviceId":"G6VVNFVYJCLH", "source":"AGENT", "timestamp":"1543396294327", "shorTimestamp":"1543396294327", "type":"AUTH", "action":"LOGIN","auth":"djpark", "auditLogDesc":"Login Success", "companyKey":"1"],
-            encoding: URLEncoding.default,
-            headers: ["Content-Type":"application/json", "Accept":"application/json"]
-            )
-            .validate(statusCode: 200..<300)
-            .responseJSON {response in
-                if let JSON = response.result.value {
-                    print(JSON)
-                } else {
-                    print("response: \(response.description)")
-                }
+    
+    func printLetterKinds(word: String) {
+        print("\(word)는 다음과 같은 모음과 자음으로 구성되어 있다.")
+        for character in word {
+            switch character.kind {
+            case .Vowel:
+                print("모음")
+            case .Consonant:
+                print("자음")
+            case .Other:
+                print("기타")
+            }
         }
     }
     func grammerTest() {
@@ -63,5 +60,81 @@ class GrammerViewController: UIViewController {
         
         print("element1 \(element1)")
         print("element2 \(element2)")
+    }
+    func convertStringInt() {
+        // String -> Int
+        let nIntVal:UInt? = UInt("100")
+        if let nIntVal2:UInt = nIntVal {
+            print("nIntVal: \(nIntVal2)")
+        }
+        
+        // UInt64 Type
+        //        let nIntVal:UInt64? = UInt64("200")
+        //        if let nIntVal2:UInt64 = nIntVal
+        //        {
+        //            // some coding..
+        //        }
+        
+        // Int -> String
+        let strVal:String? = String(123)
+        if let strVal2 = strVal {
+            print("strVal: \(strVal2)")
+        }
+    }
+    
+    func alamofireTest() {
+        Alamofire.request(
+            "https://mguarddev.raonsecure.co.kr:8802/all/insertAuditLogs.do",
+            method: .post,
+            parameters: ["deviceId":"G6VVNFVYJCLH", "source":"AGENT", "timestamp":"1543396294327", "shorTimestamp":"1543396294327", "type":"AUTH", "action":"LOGIN","auth":"djpark", "auditLogDesc":"Login Success", "companyKey":"1"],
+            encoding: URLEncoding.default,
+            headers: ["Content-Type":"application/json", "Accept":"application/json"]
+            )
+            .validate(statusCode: 200..<300)
+            .responseJSON {response in
+                if let JSON = response.result.value {
+                    print(JSON)
+                } else {
+                    print("response: \(response.description)")
+                }
+        }
+    }
+    
+    override func viewDidLoad() {
+        alamofireTest()
+        
+        grammerTest()
+        
+        let incrementByTen = makeIncrementor(forIncrement: 10)
+        print("\(incrementByTen())")
+        print("\(incrementByTen())")
+        print("\(incrementByTen())")
+        let incrementBySeven = makeIncrementor(forIncrement: 7)
+        print("\(incrementBySeven())")
+        print("\(incrementByTen())")
+        
+        printLetterKinds(word: "Hello")
+
+        convertStringInt()
+        
+        
+        let value = 15
+        guardTest(value: value)
+    }
+    
+    func guardTest(value:Int) {
+        if value < 10 {
+            print("value 는 10 보다 작다.")
+        } else if value == 10 {
+            print("value 는 10 이다")
+        } else {
+            print("value 는 10 보다 크다")
+        }
+        guard value == 10 else { // 조건이 false일때 아래 코드 실행
+            print("Error: value가 10이 아닐때 실행")
+            return
+        }
+        
+        print("value 는 10이다")
     }
 }

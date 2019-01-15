@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--문법-->
+        <!--Grammer View Controller-->
         <scene sceneID="xtN-b9-cYO">
             <objects>
                 <viewController id="6Ea-Iw-v4z" customClass="GrammerViewController" customModule="SwiftTest" customModuleProvider="target" sceneMemberID="viewController">
@@ -236,6 +236,31 @@
                                             <segue destination="nwX-bk-oRd" kind="push" id="yeN-pq-904"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="60" id="soU-vu-Njw">
+                                        <rect key="frame" x="0.0" y="240" width="375" height="60"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="soU-vu-Njw" id="aXC-xA-am8">
+                                            <rect key="frame" x="0.0" y="0.0" width="341" height="59.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="rxSwift" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9EX-Jb-wjj">
+                                                    <rect key="frame" x="15" y="0.0" width="311" height="59.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="9EX-Jb-wjj" firstAttribute="leading" secondItem="aXC-xA-am8" secondAttribute="leading" constant="15" id="CGp-3Q-BRP"/>
+                                                <constraint firstItem="9EX-Jb-wjj" firstAttribute="centerY" secondItem="aXC-xA-am8" secondAttribute="centerY" id="WAZ-La-yLM"/>
+                                                <constraint firstItem="9EX-Jb-wjj" firstAttribute="centerX" secondItem="aXC-xA-am8" secondAttribute="centerX" id="Zx4-ON-caL"/>
+                                                <constraint firstItem="9EX-Jb-wjj" firstAttribute="height" secondItem="aXC-xA-am8" secondAttribute="height" id="syJ-U3-3gQ"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="pbg-yK-cLv" kind="push" id="xtH-9X-3TJ"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -250,6 +275,52 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="saO-41-RgM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1780" y="421"/>
+        </scene>
+        <!--rxSwift-->
+        <scene sceneID="Ff6-Jl-VLx">
+            <objects>
+                <viewController id="pbg-yK-cLv" customClass="RxSwiftViewController" customModule="SwiftTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="INM-qM-MLB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Mw-S9-eD0">
+                                <rect key="frame" x="137.5" y="310.5" width="100" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="QWd-Hh-Yw5"/>
+                                    <constraint firstAttribute="height" constant="50" id="cQQ-v1-xk2"/>
+                                </constraints>
+                                <state key="normal" title="btn bind"/>
+                                <connections>
+                                    <action selector="btnBindAction:" destination="pbg-yK-cLv" eventType="touchUpInside" id="jI6-rQ-99o"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="stand by" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MDh-TB-QSY">
+                                <rect key="frame" x="0.0" y="250" width="375" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="MDh-TB-QSY" firstAttribute="width" secondItem="INM-qM-MLB" secondAttribute="width" id="48Q-0b-L4M"/>
+                            <constraint firstItem="MDh-TB-QSY" firstAttribute="centerX" secondItem="gLS-RY-VVG" secondAttribute="centerX" id="HNi-ZS-mBf"/>
+                            <constraint firstItem="4Mw-S9-eD0" firstAttribute="centerX" secondItem="gLS-RY-VVG" secondAttribute="centerX" id="Udh-TB-V6y"/>
+                            <constraint firstItem="4Mw-S9-eD0" firstAttribute="top" secondItem="MDh-TB-QSY" secondAttribute="bottom" constant="40" id="rEM-H7-x5H"/>
+                            <constraint firstItem="4Mw-S9-eD0" firstAttribute="centerY" secondItem="gLS-RY-VVG" secondAttribute="centerY" constant="-30" id="vm0-xa-pP2"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="gLS-RY-VVG"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="rxSwift" id="RIW-7u-18w"/>
+                    <connections>
+                        <outlet property="btnBind" destination="4Mw-S9-eD0" id="FQW-A7-Z8S"/>
+                        <outlet property="rxLabel" destination="MDh-TB-QSY" id="tKZ-Q0-r8z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7eZ-AQ-Fvi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1570" y="1215"/>
         </scene>
         <!--프로토콜-->
         <scene sceneID="m2g-yr-Mha">
