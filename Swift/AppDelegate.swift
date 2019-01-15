@@ -28,9 +28,6 @@ extension Character {
 }
 
 
-
-
-
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 

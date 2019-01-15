@@ -98,7 +98,7 @@ class GrammerViewController: UIViewController {
             method: .post,
             parameters: nil/*["deviceId":"G6VVNFVYJCLH", "source":"AGENT", "timestamp":"1543396294327", "shorTimestamp":"1543396294327", "type":"AUTH", "action":"LOGIN","auth":"djpark", "auditLogDesc":"Login Success", "companyKey":"1"]*/,
             encoding: URLEncoding.default,
-            headers: ["Content-Type":"application/json;charset=UTF-8", "Accept":"application/json"]
+            headers: ["Content-Type":"application/json;charset=UTF-8","Accept":"application/json"]
             )
             .validate(statusCode: 200..<499)
             .responseJSON {response in
@@ -111,6 +111,7 @@ class GrammerViewController: UIViewController {
                     print("code: \(String(describing: code)), message: \(String(describing: message))")
                     self.responseCodeLbl.text = String(describing: code)
                     self.responseMessageLbl.text = String(describing: message)
+                    
                 } else {
                     print("response: \(response.description)")
                 }

@@ -10,49 +10,6 @@ import UIKit
 import RxCocoa
 import RxSwift
 
-extension Double {
-    var km: Double {
-        return self * 1_000.0
-    }
-    
-    var m: Double {
-        return self
-    }
-    
-    var cm: Double {
-        return self/100.0
-    }
-    
-    var mm: Double {
-        return self/1_000.0
-    }
-    
-    var tf: Double {
-        return self/3.28084
-    }
-}
-
-
-extension Int {
-    func repetitions(task: ()->()) {
-        for _ in 0...self {
-            task()
-        }
-    }
-    
-    mutating func square() {
-        self = self * self
-    }
-    
-    subscript(digitIndex: Int) -> Int {
-        var decimalBase = 1
-        for _ in 1...digitIndex {
-            decimalBase *= 10
-        }
-        return (self / decimalBase) % 10
-    }
-}
-
 class ClosureViewController: UIViewController {
 //    var count : Int = 0
     var count = 5 {
@@ -84,26 +41,6 @@ class ClosureViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let oneInch = 25.4.mm
-        print("1인치는 \(oneInch) 미터입니다")
-        
-        1.repetitions {
-            print("익스텐션의 활용 예.")
-        }
-        
-        2.repetitions {
-            print("정수형에 새로운 메서드를 추가")
-        }
-        let myInt = 3
-        print("현재의 myInt 값은\(myInt)입니다")
-        
-        var yourInt = 3
-        yourInt.square()
-        
-//        746381295[0]
-//        746381295[1]
-        
-         print("현재의 myInt 값은\(yourInt)입니다")
         // Do any additional setup after loading the view, typically from a nib.
         // 명령형(imperative) 프로그래밍
         let myScore = ["A", "A","A","B","D"]
@@ -124,10 +61,7 @@ class ClosureViewController: UIViewController {
         let a = 1
         let b = 3
         print("a+b = \(a+b)")
-        
-//        a = Reactive(1)
-        
-/*
+
         let op = self.optionalCode
         print(op())
 //        self.closureCode(message: op)
@@ -138,7 +72,7 @@ class ClosureViewController: UIViewController {
         
         print(underscoreCode(person: "박동준", day: "토요일"))
         print(underscoreCode1("박동준","토요일"))
-       */
+       
         
 //        let two = (2,"two")
 //        let item = two.2
@@ -149,8 +83,56 @@ class ClosureViewController: UIViewController {
 //        var r = add(1,2)
 //        print(r)
         
+        hello()
         
+        // 이름이 없음-> 익명함수라고 함
+        ({()->Void in
+            print("안녕하셉")
+        })()
+      
+        self.checkUnderTen(num: 11, message: "choi") { (result) in
+            if result == true {
+                print("got it 1")
+            }
+            else {
+                print("got it 2")
+            }
+        }
         
+        let res = ({(num:Int, message:String)-> Bool in
+            guard num < 10 else {
+                print("message :\(message)")
+                return false
+            }
+            print("message :\(message)")
+            return true
+        })(9, "i got it")
+
+        print("result: \(res)")
+    }
+   
+    func checkUnderTen(num: Int, message: String, closure:@escaping(_ result:Bool)->()) {
+        guard num < 10 else {
+            print("message :\(message)")
+            closure(true)
+            return;
+        }
+        print("message :\(message)")
+        closure(false)
+        return ;
+    }
+    
+    func checkUnderTen(num: Int, message: String) -> Bool {
+        guard num < 10 else {
+            print("message :\(message)")
+            return false
+        }
+        print("message :\(message)")
+        return true
+    }
+    
+    func hello() {
+        print("안녕하셍")
     }
     
     func add(_ i:Int, _ j:Int) -> Int{
