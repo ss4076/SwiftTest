@@ -84,16 +84,22 @@ class GrammerViewController: UIViewController {
     
     func alamofireTest() {
         Alamofire.request(
-            "https://mguarddev.raonsecure.co.kr:8802/all/insertAuditLogs.do",
+            "https://openapi.open-platform.or.kr/transfer/withdraw",
             method: .post,
-            parameters: ["deviceId":"G6VVNFVYJCLH", "source":"AGENT", "timestamp":"1543396294327", "shorTimestamp":"1543396294327", "type":"AUTH", "action":"LOGIN","auth":"djpark", "auditLogDesc":"Login Success", "companyKey":"1"],
+            parameters: nil/*["deviceId":"G6VVNFVYJCLH", "source":"AGENT", "timestamp":"1543396294327", "shorTimestamp":"1543396294327", "type":"AUTH", "action":"LOGIN","auth":"djpark", "auditLogDesc":"Login Success", "companyKey":"1"]*/,
             encoding: URLEncoding.default,
-            headers: ["Content-Type":"application/json", "Accept":"application/json"]
+            headers: ["Content-Type":"application/json;charset=UTF-8", "Accept":"application/json"]
             )
-            .validate(statusCode: 200..<300)
+            .validate(statusCode: 200..<499)
             .responseJSON {response in
                 if let JSON = response.result.value {
                     print(JSON)
+                    let response = JSON as! NSDictionary
+                    
+                    let code = response.object(forKey: "rsp_code")
+                    let message = response.object(forKey: "rsp_message")
+                    print("code: \(String(describing: code)), message: \(String(describing: message))")
+                    
                 } else {
                     print("response: \(response.description)")
                 }
