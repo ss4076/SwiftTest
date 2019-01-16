@@ -79,6 +79,7 @@ class RxSwiftViewController: UIViewController {
     }
     
     func bind() {
+        
         self.viewModel.outputs.number.subscribe(onNext: { number in
             print(number)
             self.rxLabel.text = String(number)

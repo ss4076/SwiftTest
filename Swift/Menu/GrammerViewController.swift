@@ -118,7 +118,50 @@ class GrammerViewController: UIViewController {
         }
     }
     
+    func asTest() {
+        // 형변환 테스트 as
+        let someAnimal = Animal(name:"some Animal")
+        print("someAnimal.name: \(String(describing: someAnimal.name))")
+        
+        let someDog = Animal(name:"some Dog")
+        print("someDog.name: \(String(describing: someDog.name))")
+        
+        let someDogAsAnimal = someDog as Animal
+        print("someDogAsAnimal.name: \(String(describing: someDogAsAnimal.name))")
+        // 일반적인 형변환
+        let someAnimal2:Animal = someDog as Animal
+        print("someAnimal2.name: \(String(describing: someAnimal2.name))")
+        
+        let doggyAnimal: Animal = Dog(name: "Doggy")
+        print("doggyAnimal.name: \(String(describing: doggyAnimal.name))")
+        
+        let doggyDog = doggyAnimal as! Dog
+        print("doggyDog.name: \(String(describing: doggyDog.name))")
+        
+        let variousAnimal: Animal = Cat(name:"Kuro")
+//        print("\(variousAnimal as? Dog)")   // nil
+//        print("\(variousAnimal as! Dog)")   // SIGABRT
+        
+        
+        let happy: Dog? = nil
+//        print("\(happy?.name)")           // nil
+//        print("\(happy!.name)")           // SIGABRT
+        
+        
+//        let aaa: String?
+//        let bbb =  aaa as? String
+//        print("bbb: \(bbb)")
+        
+        
+        
+    }
+ 
     override func viewDidLoad() {
+      
+        asTest()
+        
+        
+        // 옵셔널 테스트
         let op = self.optionalCode
         print(op())
         

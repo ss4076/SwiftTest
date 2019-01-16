@@ -22,6 +22,9 @@
 		1BA0F1EE1F9AC2FC0046B567 /* ReadMe.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1BA0F1ED1F9AC2FC0046B567 /* ReadMe.strings */; };
 		7C452E0321EEB24500A75F20 /* FunctionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C452E0221EEB24500A75F20 /* FunctionViewController.swift */; };
 		7C452E0521EEC7FB00A75F20 /* MyClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C452E0421EEC7FB00A75F20 /* MyClass.swift */; };
+		7C452E0721EEEF1000A75F20 /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C452E0621EEEF1000A75F20 /* Animal.swift */; };
+		7C452E0921EEEF2200A75F20 /* Dog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C452E0821EEEF2200A75F20 /* Dog.swift */; };
+		7C452E0B21EEF0F100A75F20 /* Cat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C452E0A21EEF0F100A75F20 /* Cat.swift */; };
 		7C83325D21ED5807001E541E /* RxSwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C83325C21ED5807001E541E /* RxSwiftViewController.swift */; };
 		7C83326421ED58A5001E541E /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C83326321ED58A5001E541E /* ViewModel.swift */; };
 		A7684D50BBBA02200D70664E /* Pods_SwiftTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 776908013912931CA2D89627 /* Pods_SwiftTest.framework */; };
@@ -67,6 +70,9 @@
 		776908013912931CA2D89627 /* Pods_SwiftTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C452E0221EEB24500A75F20 /* FunctionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionViewController.swift; sourceTree = "<group>"; };
 		7C452E0421EEC7FB00A75F20 /* MyClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyClass.swift; sourceTree = "<group>"; };
+		7C452E0621EEEF1000A75F20 /* Animal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
+		7C452E0821EEEF2200A75F20 /* Dog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dog.swift; sourceTree = "<group>"; };
+		7C452E0A21EEF0F100A75F20 /* Cat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cat.swift; sourceTree = "<group>"; };
 		7C83325C21ED5807001E541E /* RxSwiftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxSwiftViewController.swift; sourceTree = "<group>"; };
 		7C83326321ED58A5001E541E /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		C957A9E72D770B2EB2B52F5F /* Pods-SwiftTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftTest/Pods-SwiftTest.release.xcconfig"; sourceTree = "<group>"; };
@@ -192,6 +198,9 @@
 		7C83325E21ED585E001E541E /* Grammer */ = {
 			isa = PBXGroup;
 			children = (
+				7C452E0621EEEF1000A75F20 /* Animal.swift */,
+				7C452E0821EEEF2200A75F20 /* Dog.swift */,
+				7C452E0A21EEF0F100A75F20 /* Cat.swift */,
 			);
 			path = Grammer;
 			sourceTree = "<group>";
@@ -427,10 +436,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C452E0721EEEF1000A75F20 /* Animal.swift in Sources */,
 				7C452E0321EEB24500A75F20 /* FunctionViewController.swift in Sources */,
+				7C452E0921EEEF2200A75F20 /* Dog.swift in Sources */,
 				1B35CFAC21EB5F890054878E /* ExtensionViewController.swift in Sources */,
 				7C452E0521EEC7FB00A75F20 /* MyClass.swift in Sources */,
 				1B35CFAE21EB5F980054878E /* ProtocolViewController.swift in Sources */,
+				7C452E0B21EEF0F100A75F20 /* Cat.swift in Sources */,
 				1B2FBDD321ECAD1B0078FAD7 /* GrammerViewController.swift in Sources */,
 				1BA0F1C21F9ABA570046B567 /* ClosureViewController.swift in Sources */,
 				1B35CFA921EB5B7A0054878E /* MenuViewController.swift in Sources */,

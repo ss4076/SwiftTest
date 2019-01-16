@@ -110,6 +110,16 @@ class ClosureViewController: UIViewController {
         }
         
         print("result: \(res)")
+        
+        print("==========================")
+        let list = 1...100
+        
+        let r = list.reduce(0) { (r, element) -> Int in
+            return r + element
+        }
+        print(r)
+        
+        
     }
     // sung hun
     func checkUnderTen(num: Int, message: String, closure:@escaping(_ result:Bool)->()) {
