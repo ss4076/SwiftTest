@@ -33,7 +33,6 @@ class RxSwiftViewController: UIViewController {
                 print(s)
         }
         
-        
         let stringSequence = Observable.just("This is stirng yo")
         let oddSequence = Observable.from([1,3,5,7,9])
         let dictSequence = Observable.from([1:"Rx", 2:"Swift"])
@@ -41,20 +40,20 @@ class RxSwiftViewController: UIViewController {
         /*
          subscribe(on: (Event<String>) -> Void)
          */
-        let subscription1 = stringSequence.subscribe { (event: Event<String>) in
+        _ = stringSequence.subscribe { (event: Event<String>) in
             print(event)
         }
         
         
-        let subscription2 = oddSequence.subscribe { (event: Event<Int>) in
+        _ = oddSequence.subscribe { (event: Event<Int>) in
             print(event)
         }
         
-        let subscription3 = dictSequence.subscribe { (event: Event<(key: Int, value: String)>) in
+        _ = dictSequence.subscribe { (event: Event<(key: Int, value: String)>) in
             print(event)
         }
         
-        var disposeBag1 = DisposeBag()
+        let disposeBag1 = DisposeBag()
         
         let stringSequence1 = Observable.just("Rxswift Observable")
         

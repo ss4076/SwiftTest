@@ -42,6 +42,14 @@ class ClosureViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        let mc = MyClass()
+        mc.callFunc()
+        print("mc.x: \(mc.x)")
+        
+        mc.completionHandlers.first?()
+        print("mc.x: \(mc.x)")
+        
+        
         // 명령형(imperative) 프로그래밍
         let myScore = ["A", "A","A","B","D"]
         var happyScore:[String] = []
@@ -62,43 +70,20 @@ class ClosureViewController: UIViewController {
         let b = 3
         print("a+b = \(a+b)")
 
-        let op = self.optionalCode
-        print(op())
+        
 //        self.closureCode(message: op)
         let result = self.closureCode(message: "요꼬아빠")
         print(result("동준","박"))
-        let ret = greeting()
-        ret()
         
-        print(underscoreCode(person: "박동준", day: "토요일"))
-        print(underscoreCode1("박동준","토요일"))
-       
         
-//        let two = (2,"two")
-//        let item = two.2
-//        let three = (num:3, eng:"three")
-//        let item = three.num
-//        let (one, _, three) = (1,2,3)
-        
-//        var r = add(1,2)
-//        print(r)
-        
+        //
         hello()
         
         // 이름이 없음-> 익명함수라고 함
-        ({()->Void in
+        ({() -> () in
             print("안녕하셉")
         })()
       
-        self.checkUnderTen(num: 11, message: "choi") { (result) in
-            if result == true {
-                print("got it 1")
-            }
-            else {
-                print("got it 2")
-            }
-        }
-        
         let res = ({(num:Int, message:String)-> Bool in
             guard num < 10 else {
                 print("message :\(message)")
@@ -107,10 +92,26 @@ class ClosureViewController: UIViewController {
             print("message :\(message)")
             return true
         })(9, "i got it")
-
+        
+        print("result: \(res)")
+        
+        self.checkUnderTen(num: 11, message: "choi") { (result) in
+            guard result == true else {
+                print("got it 2")
+                return
+            }
+            print("got it 1")
+//            if result == true {
+//                print("got it 1")
+//            }
+//            else {
+//                print("got it 2")
+//            }
+        }
+        
         print("result: \(res)")
     }
-   
+    // sung hun
     func checkUnderTen(num: Int, message: String, closure:@escaping(_ result:Bool)->()) {
         guard num < 10 else {
             print("message :\(message)")
@@ -121,7 +122,7 @@ class ClosureViewController: UIViewController {
         closure(false)
         return ;
     }
-    
+    // djpark
     func checkUnderTen(num: Int, message: String) -> Bool {
         guard num < 10 else {
             print("message :\(message)")
@@ -141,14 +142,7 @@ class ClosureViewController: UIViewController {
     }
   
     
-    /* 언더스코어 사용 예제 */
-    func underscoreCode(person: String, day:String)->String {
-        return "Hellow \(person), today is \(day)."
-    }
-    
-    func underscoreCode1(_ person: String,_ day:String)->String {
-        return "Hellow \(person), today is \(day)."
-    }
+   
     
     /*클로저 사용 예제*/
     func closureCode(message: String) -> (String, String) -> String {
@@ -173,31 +167,8 @@ class ClosureViewController: UIViewController {
     func closureCode3(message: String) -> (String, String) -> String {
         return {$1 + $0 + message}
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     
-    func greeting()->()->() {
-        func say() {
-            print("say yoo")
-        }
-        return say
-    }
-    
-    
-    /* 옵셔널 사용 예제 */
-    func optionalCode() -> String {
-        var optionalEmail:String?
-        optionalEmail = "ss4076@naver.com"
-        if let email = optionalEmail {
-            // 값이 존재한다면 출력
-            print(email)
-        }
-        // 존재하지 않으면 if문 그냥 지나침
-        return optionalEmail!
-    }
+   
    
 }
 

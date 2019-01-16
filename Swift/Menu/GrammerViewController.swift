@@ -119,6 +119,9 @@ class GrammerViewController: UIViewController {
     }
     
     override func viewDidLoad() {
+        let op = self.optionalCode
+        print(op())
+        
         grammerTest()
         
         let incrementByTen = makeIncrementor(forIncrement: 10)
@@ -152,5 +155,18 @@ class GrammerViewController: UIViewController {
         }
         
         print("value 는 10이다")
+    }
+    
+    
+    /* 옵셔널 사용 예제 */
+    func optionalCode() -> String {
+        var optionalEmail:String?
+        optionalEmail = "ss4076@naver.com"
+        if let email = optionalEmail {
+            // 값이 존재한다면 출력
+            print(email)
+        }
+        // 존재하지 않으면 if문 그냥 지나침
+        return optionalEmail!
     }
 }

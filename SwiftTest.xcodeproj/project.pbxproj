@@ -20,6 +20,8 @@
 		1BA0F1D51F9ABA580046B567 /* SwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA0F1D41F9ABA580046B567 /* SwiftTests.swift */; };
 		1BA0F1E01F9ABA580046B567 /* SwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA0F1DF1F9ABA580046B567 /* SwiftUITests.swift */; };
 		1BA0F1EE1F9AC2FC0046B567 /* ReadMe.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1BA0F1ED1F9AC2FC0046B567 /* ReadMe.strings */; };
+		7C452E0321EEB24500A75F20 /* FunctionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C452E0221EEB24500A75F20 /* FunctionViewController.swift */; };
+		7C452E0521EEC7FB00A75F20 /* MyClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C452E0421EEC7FB00A75F20 /* MyClass.swift */; };
 		7C83325D21ED5807001E541E /* RxSwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C83325C21ED5807001E541E /* RxSwiftViewController.swift */; };
 		7C83326421ED58A5001E541E /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C83326321ED58A5001E541E /* ViewModel.swift */; };
 		A7684D50BBBA02200D70664E /* Pods_SwiftTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 776908013912931CA2D89627 /* Pods_SwiftTest.framework */; };
@@ -63,6 +65,8 @@
 		1BA0F1E11F9ABA580046B567 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1BA0F1ED1F9AC2FC0046B567 /* ReadMe.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = ReadMe.strings; sourceTree = "<group>"; };
 		776908013912931CA2D89627 /* Pods_SwiftTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C452E0221EEB24500A75F20 /* FunctionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionViewController.swift; sourceTree = "<group>"; };
+		7C452E0421EEC7FB00A75F20 /* MyClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyClass.swift; sourceTree = "<group>"; };
 		7C83325C21ED5807001E541E /* RxSwiftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxSwiftViewController.swift; sourceTree = "<group>"; };
 		7C83326321ED58A5001E541E /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		C957A9E72D770B2EB2B52F5F /* Pods-SwiftTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftTest/Pods-SwiftTest.release.xcconfig"; sourceTree = "<group>"; };
@@ -119,10 +123,11 @@
 				7C83326021ED5872001E541E /* Closure */,
 				7C83325F21ED5861001E541E /* rxSwift */,
 				7C83325E21ED585E001E541E /* Grammer */,
+				1B2FBDD221ECAD1B0078FAD7 /* GrammerViewController.swift */,
+				7C452E0221EEB24500A75F20 /* FunctionViewController.swift */,
 				1BA0F1C11F9ABA570046B567 /* ClosureViewController.swift */,
 				1B35CFAB21EB5F890054878E /* ExtensionViewController.swift */,
 				1B35CFAD21EB5F980054878E /* ProtocolViewController.swift */,
-				1B2FBDD221ECAD1B0078FAD7 /* GrammerViewController.swift */,
 				7C83325C21ED5807001E541E /* RxSwiftViewController.swift */,
 			);
 			path = Menu;
@@ -202,6 +207,7 @@
 		7C83326021ED5872001E541E /* Closure */ = {
 			isa = PBXGroup;
 			children = (
+				7C452E0421EEC7FB00A75F20 /* MyClass.swift */,
 			);
 			path = Closure;
 			sourceTree = "<group>";
@@ -421,7 +427,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C452E0321EEB24500A75F20 /* FunctionViewController.swift in Sources */,
 				1B35CFAC21EB5F890054878E /* ExtensionViewController.swift in Sources */,
+				7C452E0521EEC7FB00A75F20 /* MyClass.swift in Sources */,
 				1B35CFAE21EB5F980054878E /* ProtocolViewController.swift in Sources */,
 				1B2FBDD321ECAD1B0078FAD7 /* GrammerViewController.swift in Sources */,
 				1BA0F1C21F9ABA570046B567 /* ClosureViewController.swift in Sources */,
