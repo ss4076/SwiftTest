@@ -87,7 +87,7 @@ class RxSwiftViewController: UIViewController {
         /*
          policy 기능 1- bugfix
          진행중
-         
+         url - gotrust.co.kr
          */
         self.viewModel.outputs.number.subscribe(onNext: { number in
             print(number)
