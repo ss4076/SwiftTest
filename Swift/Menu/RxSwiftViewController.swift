@@ -94,7 +94,7 @@ class RxSwiftViewController: UIViewController {
         })
         .disposed(by: disposeBag) // 메모리 해제
         // policy 기능 2
-        // 진행 중
+        // 진행 완료
         self.btnBind.rx.tap
             .subscribe(onNext: viewModel.inputs.bindBtnViewModel) //Observable 값을 구독
             .disposed(by: disposeBag)  // 메모리 해제
