@@ -85,7 +85,7 @@ class RxSwiftViewController: UIViewController {
     func bind() {
         // policy
         /*
-         policy 개발진행 중.
+         policy 기능 1
          첫번째 기능 개발 완료
          */
         self.viewModel.outputs.number.subscribe(onNext: { number in
@@ -93,7 +93,8 @@ class RxSwiftViewController: UIViewController {
             self.rxLabel.text = String(number)
         })
         .disposed(by: disposeBag) // 메모리 해제
-        
+        // policy 기능 2
+        // 진행 중
         self.btnBind.rx.tap
             .subscribe(onNext: viewModel.inputs.bindBtnViewModel) //Observable 값을 구독
             .disposed(by: disposeBag)  // 메모리 해제
