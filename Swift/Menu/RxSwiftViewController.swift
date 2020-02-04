@@ -85,7 +85,7 @@ class RxSwiftViewController: UIViewController {
     func bind() {
         // policy
         /*
-         policy 기능 1
+         policy 기능 1- bugfix
          첫번째 기능 개발 완료
          */
         self.viewModel.outputs.number.subscribe(onNext: { number in
