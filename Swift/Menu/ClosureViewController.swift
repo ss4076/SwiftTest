@@ -10,49 +10,6 @@ import UIKit
 import RxCocoa
 import RxSwift
 
-extension Double {
-    var km: Double {
-        return self * 1_000.0
-    }
-    
-    var m: Double {
-        return self
-    }
-    
-    var cm: Double {
-        return self/100.0
-    }
-    
-    var mm: Double {
-        return self/1_000.0
-    }
-    
-    var tf: Double {
-        return self/3.28084
-    }
-}
-
-
-extension Int {
-    func repetitions(task: ()->()) {
-        for _ in 0...self {
-            task()
-        }
-    }
-    
-    mutating func square() {
-        self = self * self
-    }
-    
-    subscript(digitIndex: Int) -> Int {
-        var decimalBase = 1
-        for _ in 1...digitIndex {
-            decimalBase *= 10
-        }
-        return (self / decimalBase) % 10
-    }
-}
-
 class ClosureViewController: UIViewController {
 //    var count : Int = 0
     var count = 5 {
@@ -84,27 +41,15 @@ class ClosureViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let oneInch = 25.4.mm
-        print("1인치는 \(oneInch) 미터입니다")
-        
-        1.repetitions {
-            print("익스텐션의 활용 예.")
-        }
-        
-        2.repetitions {
-            print("정수형에 새로운 메서드를 추가")
-        }
-        let myInt = 3
-        print("현재의 myInt 값은\(myInt)입니다")
-        
-        var yourInt = 3
-        yourInt.square()
-        
-//        746381295[0]
-//        746381295[1]
-        
-         print("현재의 myInt 값은\(yourInt)입니다")
         // Do any additional setup after loading the view, typically from a nib.
+        let mc = MyClass()
+        mc.callFunc()
+        print("mc.x: \(mc.x)")
+        
+        mc.completionHandlers.first?()
+        print("mc.x: \(mc.x)")
+        
+        
         // 명령형(imperative) 프로그래밍
         let myScore = ["A", "A","A","B","D"]
         var happyScore:[String] = []
@@ -124,33 +69,81 @@ class ClosureViewController: UIViewController {
         let a = 1
         let b = 3
         print("a+b = \(a+b)")
+
         
-//        a = Reactive(1)
-        
-/*
-        let op = self.optionalCode
-        print(op())
 //        self.closureCode(message: op)
         let result = self.closureCode(message: "요꼬아빠")
         print(result("동준","박"))
-        let ret = greeting()
-        ret()
-        
-        print(underscoreCode(person: "박동준", day: "토요일"))
-        print(underscoreCode1("박동준","토요일"))
-       */
-        
-//        let two = (2,"two")
-//        let item = two.2
-//        let three = (num:3, eng:"three")
-//        let item = three.num
-//        let (one, _, three) = (1,2,3)
-        
-//        var r = add(1,2)
-//        print(r)
         
         
+        //
+        hello()
         
+        // 이름이 없음-> 익명함수라고 함
+        ({() -> () in
+            print("안녕하셉")
+        })()
+      
+        let res = ({(num:Int, message:String)-> Bool in
+            guard num < 10 else {
+                print("message :\(message)")
+                return false
+            }
+            print("message :\(message)")
+            return true
+        })(9, "i got it")
+        
+        print("result: \(res)")
+        
+        self.checkUnderTen(num: 11, message: "choi") { (result) in
+            guard result == true else {
+                print("got it 2")
+                return
+            }
+            print("got it 1")
+//            if result == true {
+//                print("got it 1")
+//            }
+//            else {
+//                print("got it 2")
+//            }
+        }
+        
+        print("result: \(res)")
+        
+        print("==========================")
+        let list = 1...100
+        
+        let r = list.reduce(0) { (r, element) -> Int in
+            return r + element
+        }
+        print(r)
+        
+        
+    }
+    // sung hun
+    func checkUnderTen(num: Int, message: String, closure:@escaping(_ result:Bool)->()) {
+        guard num < 10 else {
+            print("message :\(message)")
+            closure(true)
+            return;
+        }
+        print("message :\(message)")
+        closure(false)
+        return ;
+    }
+    // djpark
+    func checkUnderTen(num: Int, message: String) -> Bool {
+        guard num < 10 else {
+            print("message :\(message)")
+            return false
+        }
+        print("message :\(message)")
+        return true
+    }
+    
+    func hello() {
+        print("안녕하셍")
     }
     
     func add(_ i:Int, _ j:Int) -> Int{
@@ -159,14 +152,7 @@ class ClosureViewController: UIViewController {
     }
   
     
-    /* 언더스코어 사용 예제 */
-    func underscoreCode(person: String, day:String)->String {
-        return "Hellow \(person), today is \(day)."
-    }
-    
-    func underscoreCode1(_ person: String,_ day:String)->String {
-        return "Hellow \(person), today is \(day)."
-    }
+   
     
     /*클로저 사용 예제*/
     func closureCode(message: String) -> (String, String) -> String {
@@ -191,31 +177,8 @@ class ClosureViewController: UIViewController {
     func closureCode3(message: String) -> (String, String) -> String {
         return {$1 + $0 + message}
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     
-    func greeting()->()->() {
-        func say() {
-            print("say yoo")
-        }
-        return say
-    }
-    
-    
-    /* 옵셔널 사용 예제 */
-    func optionalCode() -> String {
-        var optionalEmail:String?
-        optionalEmail = "ss4076@naver.com"
-        if let email = optionalEmail {
-            // 값이 존재한다면 출력
-            print(email)
-        }
-        // 존재하지 않으면 if문 그냥 지나침
-        return optionalEmail!
-    }
+   
    
 }
 

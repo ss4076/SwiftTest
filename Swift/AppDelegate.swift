@@ -28,53 +28,14 @@ extension Character {
 }
 
 
-
-
-
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-    func printLetterKinds(word: String) {
-        print("\(word)는 다음과 같은 모음과 자음으로 구성되어 있다.")
-        for character in word {
-            switch character.kind {
-            case .Vowel:
-                print("모음")
-            case .Consonant:
-                print("자음")
-            case .Other:
-                print("기타")
-            }
-        }
-    }
-
-    func makeIncrementor(forIncrement amount: Int)->()->Int {
-        var runningTotal = 0
-        func incrementor() -> Int {
-            runningTotal += amount
-            return runningTotal
-        }
-        return incrementor
-    }
-    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        let incrementByTen = makeIncrementor(forIncrement: 10)
-        print("\(incrementByTen())")
-        print("\(incrementByTen())")
-        print("\(incrementByTen())")
-        let incrementBySeven = makeIncrementor(forIncrement: 7)
-        print("\(incrementBySeven())")
-        print("\(incrementByTen())")
-        
-        
-        
-        printLetterKinds(word: "Hello")
-        
        
-        
         return true
     }
 
