@@ -20,6 +20,7 @@ class RxSwiftViewController: UIViewController {
     
     
     func myJust<E>(element: E) -> Observable<E> {
+        
         return Observable.create{ observer in
             observer.on(.next(element))
             observer.on(.completed)
@@ -28,6 +29,7 @@ class RxSwiftViewController: UIViewController {
     }
     
     func reactiveCodeTest() {
+        
         myJust(element:"My just observable")
             .subscribe { s in
                 print(s)
