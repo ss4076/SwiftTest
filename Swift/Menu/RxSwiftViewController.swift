@@ -93,7 +93,7 @@ class RxSwiftViewController: UIViewController {
             .disposed(by: disposeBag)  // 메모리 해제
     }
     
-//    @IBAction func btnBindAction(_ sender: Any) {
-//        print("btnBindAcion")
-//    }
+    @IBAction func btnBindAction(_ sender: Any) {
+        print("btnBindAcion")
+    }
 }
