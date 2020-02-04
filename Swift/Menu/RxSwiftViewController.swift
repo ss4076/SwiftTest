@@ -83,13 +83,19 @@ class RxSwiftViewController: UIViewController {
     }
     
     func bind() {
-        
+        // policy
+        /*
+         policy 기능 1- bugfix
+         진행중
+         
+         */
         self.viewModel.outputs.number.subscribe(onNext: { number in
             print(number)
             self.rxLabel.text = String(number)
         })
         .disposed(by: disposeBag) // 메모리 해제
-        
+        // policy 기능 2
+        // bugfix
         self.btnBind.rx.tap
             .subscribe(onNext: viewModel.inputs.bindBtnViewModel) //Observable 값을 구독
             .disposed(by: disposeBag)  // 메모리 해제
