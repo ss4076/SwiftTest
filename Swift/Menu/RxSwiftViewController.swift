@@ -46,6 +46,9 @@ class RxSwiftViewController: UIViewController {
             print(event)
         }
         
+        
+        
+        // ims-1
         _ = oddSequence.subscribe { (event: Event<Int>) in
             print(event)
         }
