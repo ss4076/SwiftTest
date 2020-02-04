@@ -57,7 +57,7 @@ class RxSwiftViewController: UIViewController {
         let disposeBag1 = DisposeBag()
         
         let stringSequence1 = Observable.just("Rxswift Observable")
-        
+        // ims-2
         let subscription4 = stringSequence1.subscribe { (event: Event<String>) in
             print(event)
         }
