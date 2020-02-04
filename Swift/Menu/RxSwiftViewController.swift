@@ -20,6 +20,7 @@ class RxSwiftViewController: UIViewController {
     
     
     func myJust<E>(element: E) -> Observable<E> {
+        
         return Observable.create{ observer in
             observer.on(.next(element))
             observer.on(.completed)
@@ -28,6 +29,7 @@ class RxSwiftViewController: UIViewController {
     }
     
     func reactiveCodeTest() {
+        
         myJust(element:"My just observable")
             .subscribe { s in
                 print(s)
@@ -91,7 +93,7 @@ class RxSwiftViewController: UIViewController {
             .disposed(by: disposeBag)  // 메모리 해제
     }
     
-//    @IBAction func btnBindAction(_ sender: Any) {
-//        print("btnBindAcion")
-//    }
+    @IBAction func btnBindAction(_ sender: Any) {
+        print("btnBindAcion")
+    }
 }
