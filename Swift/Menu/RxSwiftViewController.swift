@@ -86,7 +86,8 @@ class RxSwiftViewController: UIViewController {
         // policy
         /*
          policy 기능 1- bugfix
-         첫번째 기능 개발 완료
+         진행중
+         
          */
         self.viewModel.outputs.number.subscribe(onNext: { number in
             print(number)
