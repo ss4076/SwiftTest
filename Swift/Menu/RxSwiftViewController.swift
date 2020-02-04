@@ -83,7 +83,11 @@ class RxSwiftViewController: UIViewController {
     }
     
     func bind() {
-        
+        // policy
+        /*
+         policy 개발진행 중.
+         첫번째 기능 개발 완료
+         */
         self.viewModel.outputs.number.subscribe(onNext: { number in
             print(number)
             self.rxLabel.text = String(number)
