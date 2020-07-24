@@ -80,5 +80,79 @@ class SwiftTests: XCTestCase {
         }
     }
     
+    
+    func testGrammer1() {
+
+        /*
+         optional값이 있을 수도 있고 없을 수도 있다.
+         왜? nil의 가능성을 명시적으로 표현
+         전달받은 값이 nil 체크안해도 됨
+         예외 사항을 최소화 할수있는 안전한 코딩
+         
+         ? 와 !
+         
+         1. ! : 암시적 추출 옵셔널
+         2. ? : 일반 타입과 다르기 때문에 연산 제한 됨
+         */
+        
+        var optionalValue: Int? = 100
+        
+//        optionalValue = optionalValue + 1
+        
+//        optionalValue = nil
+        // nil로 인한 런타임 에러 발생
+//        optionalValue = optionalValue + 1
+        
+        switch optionalValue {
+        case .none:
+            print("This Optional variable is nil")
+        case .some(let value):
+            print("Value is \(value)")
+        }
+        
+        self.someFouc(param: nil)
+
+    }
+    
+    func someFouc(param: Int?) {
+        
+    }
+    
+    
+    func testGrammer2() {
+    
+        /*
+         꺼내는 법
+         1. 옵셔널 바인딩
+          - nil체크 + 안전한 값추출
+         2. 강제 추출
+          - 값을 강제로 추출
+         
+         옵셔널 활용
+         */
+        
+        let myName: String? = "djpark0402"
+        
+        // name 상수는 if-let 구문 내에서만 사용가능(바인딩)
+        if let name: String = myName {
+            printName(name)
+        } else {
+            print("myName = nil")
+        }
+    }
+
+    func printName(_ name: String) {
+        print(name)
+    }
+    
+    
+    func testGrammer3() {
+        
+        print(speak(I: "you", am: "are", name: "oms"))
+    }
+    
+    func speak(I i:String, am:String, name:String) -> String {
+        return "\(i) \(am) \(name)"
+    }
 }
 
