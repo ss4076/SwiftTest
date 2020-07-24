@@ -94,7 +94,7 @@ class SwiftTests: XCTestCase {
          1. ! : 암시적 추출 옵셔널
          2. ? : 일반 타입과 다르기 때문에 연산 제한 됨
          */
-        tfsa
+        
         var optionalValue: Int? = 100
         
 //        optionalValue = optionalValue + 1
