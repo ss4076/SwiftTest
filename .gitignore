@@ -85,6 +85,6 @@ fastlane/test_output
 /*.gcno
 
 
-*djpark.xcuserdated/UserInterfaceState.xcuserstate*
+*djpark.xcuserdatad/UserInterfaceState.xcuserstate*
 
 # End of https://www.gitignore.io/api/swift,xcode,cocoapods
