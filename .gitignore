@@ -85,6 +85,6 @@ fastlane/test_output
 /*.gcno
 
 
-*.xcuserdata
+
 
 # End of https://www.gitignore.io/api/swift,xcode,cocoapods
