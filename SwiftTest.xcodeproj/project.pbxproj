@@ -8,27 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		1B1CF19E201D74060093BCCB /* TodoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1CF19D201D74060093BCCB /* TodoManager.swift */; };
-		1B2FBDD321ECAD1B0078FAD7 /* GrammerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2FBDD221ECAD1B0078FAD7 /* GrammerViewController.swift */; };
 		1B35CFA921EB5B7A0054878E /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B35CFA821EB5B7A0054878E /* MenuViewController.swift */; };
-		1B35CFAC21EB5F890054878E /* ExtensionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B35CFAB21EB5F890054878E /* ExtensionViewController.swift */; };
-		1B35CFAE21EB5F980054878E /* ProtocolViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B35CFAD21EB5F980054878E /* ProtocolViewController.swift */; };
 		1BA0F1C01F9ABA570046B567 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA0F1BF1F9ABA570046B567 /* AppDelegate.swift */; };
-		1BA0F1C21F9ABA570046B567 /* ClosureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA0F1C11F9ABA570046B567 /* ClosureViewController.swift */; };
 		1BA0F1C51F9ABA570046B567 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BA0F1C31F9ABA570046B567 /* Main.storyboard */; };
 		1BA0F1C71F9ABA570046B567 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BA0F1C61F9ABA570046B567 /* Assets.xcassets */; };
 		1BA0F1CA1F9ABA570046B567 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BA0F1C81F9ABA570046B567 /* LaunchScreen.storyboard */; };
 		1BA0F1D51F9ABA580046B567 /* SwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA0F1D41F9ABA580046B567 /* SwiftTests.swift */; };
 		1BA0F1E01F9ABA580046B567 /* SwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA0F1DF1F9ABA580046B567 /* SwiftUITests.swift */; };
 		1BA0F1EE1F9AC2FC0046B567 /* ReadMe.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1BA0F1ED1F9AC2FC0046B567 /* ReadMe.strings */; };
-		1BFE0411250A122900060B95 /* IWAuthenticatorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFE0410250A122900060B95 /* IWAuthenticatorManager.swift */; };
-		1BFE0414250A170E00060B95 /* IWAuthenticatorSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFE0413250A170E00060B95 /* IWAuthenticatorSetting.swift */; };
-		7C452E0321EEB24500A75F20 /* FunctionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C452E0221EEB24500A75F20 /* FunctionViewController.swift */; };
-		7C452E0521EEC7FB00A75F20 /* MyClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C452E0421EEC7FB00A75F20 /* MyClass.swift */; };
-		7C452E0721EEEF1000A75F20 /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C452E0621EEEF1000A75F20 /* Animal.swift */; };
-		7C452E0921EEEF2200A75F20 /* Dog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C452E0821EEEF2200A75F20 /* Dog.swift */; };
-		7C452E0B21EEF0F100A75F20 /* Cat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C452E0A21EEF0F100A75F20 /* Cat.swift */; };
-		7C83325D21ED5807001E541E /* RxSwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C83325C21ED5807001E541E /* RxSwiftViewController.swift */; };
-		7C83326421ED58A5001E541E /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C83326321ED58A5001E541E /* ViewModel.swift */; };
+		1BFE042C250A1E1700060B95 /* GrammerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFE041A250A1E1600060B95 /* GrammerViewController.swift */; };
+		1BFE042D250A1E1700060B95 /* RxSwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFE041B250A1E1700060B95 /* RxSwiftViewController.swift */; };
+		1BFE042E250A1E1700060B95 /* IWAuthenticatorSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFE041D250A1E1700060B95 /* IWAuthenticatorSetting.swift */; };
+		1BFE042F250A1E1700060B95 /* ClosureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFE041E250A1E1700060B95 /* ClosureViewController.swift */; };
+		1BFE0430250A1E1700060B95 /* ProtocolViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFE041F250A1E1700060B95 /* ProtocolViewController.swift */; };
+		1BFE0431250A1E1700060B95 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFE0421250A1E1700060B95 /* ViewModel.swift */; };
+		1BFE0432250A1E1700060B95 /* ExtensionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFE0422250A1E1700060B95 /* ExtensionViewController.swift */; };
+		1BFE0433250A1E1700060B95 /* Dog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFE0424250A1E1700060B95 /* Dog.swift */; };
+		1BFE0434250A1E1700060B95 /* Cat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFE0425250A1E1700060B95 /* Cat.swift */; };
+		1BFE0435250A1E1700060B95 /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFE0426250A1E1700060B95 /* Animal.swift */; };
+		1BFE0436250A1E1700060B95 /* FunctionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFE0427250A1E1700060B95 /* FunctionViewController.swift */; };
+		1BFE0437250A1E1700060B95 /* MyClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFE0429250A1E1700060B95 /* MyClass.swift */; };
+		1BFE0438250A1E1700060B95 /* IWAuthenticatorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFE042B250A1E1700060B95 /* IWAuthenticatorManager.swift */; };
 		A7684D50BBBA02200D70664E /* Pods_SwiftTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 776908013912931CA2D89627 /* Pods_SwiftTest.framework */; };
 /* End PBXBuildFile section */
 
@@ -51,13 +51,9 @@
 
 /* Begin PBXFileReference section */
 		1B1CF19D201D74060093BCCB /* TodoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoManager.swift; sourceTree = "<group>"; };
-		1B2FBDD221ECAD1B0078FAD7 /* GrammerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrammerViewController.swift; sourceTree = "<group>"; };
 		1B35CFA821EB5B7A0054878E /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
-		1B35CFAB21EB5F890054878E /* ExtensionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionViewController.swift; sourceTree = "<group>"; };
-		1B35CFAD21EB5F980054878E /* ProtocolViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolViewController.swift; sourceTree = "<group>"; };
 		1BA0F1BC1F9ABA570046B567 /* SwiftTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BA0F1BF1F9ABA570046B567 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1BA0F1C11F9ABA570046B567 /* ClosureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosureViewController.swift; sourceTree = "<group>"; };
 		1BA0F1C41F9ABA570046B567 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1BA0F1C61F9ABA570046B567 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1BA0F1C91F9ABA570046B567 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -69,16 +65,20 @@
 		1BA0F1DF1F9ABA580046B567 /* SwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUITests.swift; sourceTree = "<group>"; };
 		1BA0F1E11F9ABA580046B567 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1BA0F1ED1F9AC2FC0046B567 /* ReadMe.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = ReadMe.strings; sourceTree = "<group>"; };
-		1BFE0410250A122900060B95 /* IWAuthenticatorManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IWAuthenticatorManager.swift; sourceTree = "<group>"; };
-		1BFE0413250A170E00060B95 /* IWAuthenticatorSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IWAuthenticatorSetting.swift; sourceTree = "<group>"; };
+		1BFE041A250A1E1600060B95 /* GrammerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GrammerViewController.swift; sourceTree = "<group>"; };
+		1BFE041B250A1E1700060B95 /* RxSwiftViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxSwiftViewController.swift; sourceTree = "<group>"; };
+		1BFE041D250A1E1700060B95 /* IWAuthenticatorSetting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IWAuthenticatorSetting.swift; sourceTree = "<group>"; };
+		1BFE041E250A1E1700060B95 /* ClosureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClosureViewController.swift; sourceTree = "<group>"; };
+		1BFE041F250A1E1700060B95 /* ProtocolViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtocolViewController.swift; sourceTree = "<group>"; };
+		1BFE0421250A1E1700060B95 /* ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		1BFE0422250A1E1700060B95 /* ExtensionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionViewController.swift; sourceTree = "<group>"; };
+		1BFE0424250A1E1700060B95 /* Dog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dog.swift; sourceTree = "<group>"; };
+		1BFE0425250A1E1700060B95 /* Cat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cat.swift; sourceTree = "<group>"; };
+		1BFE0426250A1E1700060B95 /* Animal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
+		1BFE0427250A1E1700060B95 /* FunctionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunctionViewController.swift; sourceTree = "<group>"; };
+		1BFE0429250A1E1700060B95 /* MyClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyClass.swift; sourceTree = "<group>"; };
+		1BFE042B250A1E1700060B95 /* IWAuthenticatorManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IWAuthenticatorManager.swift; sourceTree = "<group>"; };
 		776908013912931CA2D89627 /* Pods_SwiftTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7C452E0221EEB24500A75F20 /* FunctionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionViewController.swift; sourceTree = "<group>"; };
-		7C452E0421EEC7FB00A75F20 /* MyClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyClass.swift; sourceTree = "<group>"; };
-		7C452E0621EEEF1000A75F20 /* Animal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
-		7C452E0821EEEF2200A75F20 /* Dog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dog.swift; sourceTree = "<group>"; };
-		7C452E0A21EEF0F100A75F20 /* Cat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cat.swift; sourceTree = "<group>"; };
-		7C83325C21ED5807001E541E /* RxSwiftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxSwiftViewController.swift; sourceTree = "<group>"; };
-		7C83326321ED58A5001E541E /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		C957A9E72D770B2EB2B52F5F /* Pods-SwiftTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftTest/Pods-SwiftTest.release.xcconfig"; sourceTree = "<group>"; };
 		F48B3A883F1A7EF2D4784696 /* Pods-SwiftTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftTest/Pods-SwiftTest.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -128,19 +128,17 @@
 		1B35CFAA21EB5F670054878E /* Menu */ = {
 			isa = PBXGroup;
 			children = (
-				1BFE040F250A121000060B95 /* Unlock */,
-				1BFE0412250A16F900060B95 /* Config */,
-				7C83326221ED5880001E541E /* Protocol */,
-				7C83326121ED587A001E541E /* Extension */,
-				7C83326021ED5872001E541E /* Closure */,
-				7C83325F21ED5861001E541E /* rxSwift */,
-				7C83325E21ED585E001E541E /* Grammer */,
-				1B2FBDD221ECAD1B0078FAD7 /* GrammerViewController.swift */,
-				7C452E0221EEB24500A75F20 /* FunctionViewController.swift */,
-				1BA0F1C11F9ABA570046B567 /* ClosureViewController.swift */,
-				1B35CFAB21EB5F890054878E /* ExtensionViewController.swift */,
-				1B35CFAD21EB5F980054878E /* ProtocolViewController.swift */,
-				7C83325C21ED5807001E541E /* RxSwiftViewController.swift */,
+				1BFE0428250A1E1700060B95 /* Closure */,
+				1BFE041E250A1E1700060B95 /* ClosureViewController.swift */,
+				1BFE041C250A1E1700060B95 /* Config */,
+				1BFE0422250A1E1700060B95 /* ExtensionViewController.swift */,
+				1BFE0427250A1E1700060B95 /* FunctionViewController.swift */,
+				1BFE0423250A1E1700060B95 /* Grammer */,
+				1BFE041A250A1E1600060B95 /* GrammerViewController.swift */,
+				1BFE041F250A1E1700060B95 /* ProtocolViewController.swift */,
+				1BFE0420250A1E1700060B95 /* rxSwift */,
+				1BFE041B250A1E1700060B95 /* RxSwiftViewController.swift */,
+				1BFE042A250A1E1700060B95 /* Unlock */,
 			);
 			path = Menu;
 			sourceTree = "<group>";
@@ -201,59 +199,46 @@
 			path = SwiftUITests;
 			sourceTree = "<group>";
 		};
-		1BFE040F250A121000060B95 /* Unlock */ = {
+		1BFE041C250A1E1700060B95 /* Config */ = {
 			isa = PBXGroup;
 			children = (
-				1BFE0410250A122900060B95 /* IWAuthenticatorManager.swift */,
-			);
-			path = Unlock;
-		};
-		1BFE0412250A16F900060B95 /* Config */ = {
-			isa = PBXGroup;
-			children = (
-				1BFE0413250A170E00060B95 /* IWAuthenticatorSetting.swift */,
+				1BFE041D250A1E1700060B95 /* IWAuthenticatorSetting.swift */,
 			);
 			path = Config;
 			sourceTree = "<group>";
 		};
-		7C83325E21ED585E001E541E /* Grammer */ = {
+		1BFE0420250A1E1700060B95 /* rxSwift */ = {
 			isa = PBXGroup;
 			children = (
-				7C452E0621EEEF1000A75F20 /* Animal.swift */,
-				7C452E0821EEEF2200A75F20 /* Dog.swift */,
-				7C452E0A21EEF0F100A75F20 /* Cat.swift */,
-			);
-			path = Grammer;
-			sourceTree = "<group>";
-		};
-		7C83325F21ED5861001E541E /* rxSwift */ = {
-			isa = PBXGroup;
-			children = (
-				7C83326321ED58A5001E541E /* ViewModel.swift */,
+				1BFE0421250A1E1700060B95 /* ViewModel.swift */,
 			);
 			path = rxSwift;
 			sourceTree = "<group>";
 		};
-		7C83326021ED5872001E541E /* Closure */ = {
+		1BFE0423250A1E1700060B95 /* Grammer */ = {
 			isa = PBXGroup;
 			children = (
-				7C452E0421EEC7FB00A75F20 /* MyClass.swift */,
+				1BFE0424250A1E1700060B95 /* Dog.swift */,
+				1BFE0425250A1E1700060B95 /* Cat.swift */,
+				1BFE0426250A1E1700060B95 /* Animal.swift */,
+			);
+			path = Grammer;
+			sourceTree = "<group>";
+		};
+		1BFE0428250A1E1700060B95 /* Closure */ = {
+			isa = PBXGroup;
+			children = (
+				1BFE0429250A1E1700060B95 /* MyClass.swift */,
 			);
 			path = Closure;
 			sourceTree = "<group>";
 		};
-		7C83326121ED587A001E541E /* Extension */ = {
+		1BFE042A250A1E1700060B95 /* Unlock */ = {
 			isa = PBXGroup;
 			children = (
+				1BFE042B250A1E1700060B95 /* IWAuthenticatorManager.swift */,
 			);
-			path = Extension;
-			sourceTree = "<group>";
-		};
-		7C83326221ED5880001E541E /* Protocol */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Protocol;
+			path = Unlock;
 			sourceTree = "<group>";
 		};
 		FA83F6E483CA5DE94F5A4EE0 /* Pods */ = {
@@ -335,7 +320,7 @@
 				TargetAttributes = {
 					1BA0F1BB1F9ABA570046B567 = {
 						CreatedOnToolsVersion = 9.0;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					1BA0F1CF1F9ABA580046B567 = {
 						CreatedOnToolsVersion = 9.0;
@@ -457,21 +442,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7C452E0721EEEF1000A75F20 /* Animal.swift in Sources */,
-				7C452E0321EEB24500A75F20 /* FunctionViewController.swift in Sources */,
-				7C452E0921EEEF2200A75F20 /* Dog.swift in Sources */,
-				1B35CFAC21EB5F890054878E /* ExtensionViewController.swift in Sources */,
-				1BFE0414250A170E00060B95 /* IWAuthenticatorSetting.swift in Sources */,
-				7C452E0521EEC7FB00A75F20 /* MyClass.swift in Sources */,
-				1B35CFAE21EB5F980054878E /* ProtocolViewController.swift in Sources */,
-				7C452E0B21EEF0F100A75F20 /* Cat.swift in Sources */,
-				1B2FBDD321ECAD1B0078FAD7 /* GrammerViewController.swift in Sources */,
-				1BA0F1C21F9ABA570046B567 /* ClosureViewController.swift in Sources */,
+				1BFE0430250A1E1700060B95 /* ProtocolViewController.swift in Sources */,
+				1BFE042F250A1E1700060B95 /* ClosureViewController.swift in Sources */,
+				1BFE0432250A1E1700060B95 /* ExtensionViewController.swift in Sources */,
+				1BFE0434250A1E1700060B95 /* Cat.swift in Sources */,
+				1BFE042D250A1E1700060B95 /* RxSwiftViewController.swift in Sources */,
+				1BFE0435250A1E1700060B95 /* Animal.swift in Sources */,
+				1BFE0438250A1E1700060B95 /* IWAuthenticatorManager.swift in Sources */,
+				1BFE0437250A1E1700060B95 /* MyClass.swift in Sources */,
+				1BFE042E250A1E1700060B95 /* IWAuthenticatorSetting.swift in Sources */,
 				1B35CFA921EB5B7A0054878E /* MenuViewController.swift in Sources */,
-				7C83325D21ED5807001E541E /* RxSwiftViewController.swift in Sources */,
-				1BFE0411250A122900060B95 /* IWAuthenticatorManager.swift in Sources */,
-				7C83326421ED58A5001E541E /* ViewModel.swift in Sources */,
 				1BA0F1C01F9ABA570046B567 /* AppDelegate.swift in Sources */,
+				1BFE0431250A1E1700060B95 /* ViewModel.swift in Sources */,
+				1BFE0436250A1E1700060B95 /* FunctionViewController.swift in Sources */,
+				1BFE0433250A1E1700060B95 /* Dog.swift in Sources */,
+				1BFE042C250A1E1700060B95 /* GrammerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -639,12 +624,15 @@
 			baseConfigurationReference = F48B3A883F1A7EF2D4784696 /* Pods-SwiftTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer: dong jun park (WCGJVE94PF)";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 2DRRGUP83C;
 				INFOPLIST_FILE = Swift/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.djpark.Swift;
+				PRODUCT_BUNDLE_IDENTIFIER = com.raonsecure.gotrustid.business;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = GO_TRUST_DEV_2019;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -655,12 +643,15 @@
 			baseConfigurationReference = C957A9E72D770B2EB2B52F5F /* Pods-SwiftTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Softsecurity Co., Ltd.";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 2DRRGUP83C;
 				INFOPLIST_FILE = Swift/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.djpark.Swift;
+				PRODUCT_BUNDLE_IDENTIFIER = com.raonsecure.gotrustid.business;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = GO_TRUST_DIST_2019;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
