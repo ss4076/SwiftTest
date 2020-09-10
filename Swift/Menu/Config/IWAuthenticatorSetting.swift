@@ -19,4 +19,14 @@ class IWAuthenticatorSetting: NSObject {
         
         return UserDefaults.standard.object(forKey: "auth_message") as! String
     }
+    
+    static func setRegMessage(message: String) -> Void {
+        
+        UserDefaults.standard.set(message, forKey: "reg_message")
+    }
+    
+    static func getRegMessage() -> String {
+        
+        return UserDefaults.standard.object(forKey: "reg_message") as! String
+    }
 }
