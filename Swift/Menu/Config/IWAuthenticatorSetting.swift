@@ -17,6 +17,6 @@ class IWAuthenticatorSetting: NSObject {
     
     static func getAuthMessage() -> String {
         
-        return UserDefaults.standard.object(forKey: "auth_message")
+        return UserDefaults.standard.object(forKey: "auth_message") as! String
     }
 }
