@@ -20,6 +20,8 @@
 		1BA0F1D51F9ABA580046B567 /* SwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA0F1D41F9ABA580046B567 /* SwiftTests.swift */; };
 		1BA0F1E01F9ABA580046B567 /* SwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA0F1DF1F9ABA580046B567 /* SwiftUITests.swift */; };
 		1BA0F1EE1F9AC2FC0046B567 /* ReadMe.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1BA0F1ED1F9AC2FC0046B567 /* ReadMe.strings */; };
+		1BB2AA66250F392800B5D62E /* IWAuthenticatorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB2AA65250F392800B5D62E /* IWAuthenticatorManager.swift */; };
+		1BB2AA68250F399300B5D62E /* IWAuthenticatorConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB2AA67250F399300B5D62E /* IWAuthenticatorConfig.swift */; };
 		7C452E0321EEB24500A75F20 /* FunctionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C452E0221EEB24500A75F20 /* FunctionViewController.swift */; };
 		7C452E0521EEC7FB00A75F20 /* MyClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C452E0421EEC7FB00A75F20 /* MyClass.swift */; };
 		7C452E0721EEEF1000A75F20 /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C452E0621EEEF1000A75F20 /* Animal.swift */; };
@@ -67,6 +69,8 @@
 		1BA0F1DF1F9ABA580046B567 /* SwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUITests.swift; sourceTree = "<group>"; };
 		1BA0F1E11F9ABA580046B567 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1BA0F1ED1F9AC2FC0046B567 /* ReadMe.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = ReadMe.strings; sourceTree = "<group>"; };
+		1BB2AA65250F392800B5D62E /* IWAuthenticatorManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IWAuthenticatorManager.swift; sourceTree = "<group>"; };
+		1BB2AA67250F399300B5D62E /* IWAuthenticatorConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IWAuthenticatorConfig.swift; sourceTree = "<group>"; };
 		776908013912931CA2D89627 /* Pods_SwiftTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C452E0221EEB24500A75F20 /* FunctionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionViewController.swift; sourceTree = "<group>"; };
 		7C452E0421EEC7FB00A75F20 /* MyClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyClass.swift; sourceTree = "<group>"; };
@@ -124,6 +128,7 @@
 		1B35CFAA21EB5F670054878E /* Menu */ = {
 			isa = PBXGroup;
 			children = (
+				1BB2AA64250F390400B5D62E /* Unlock */,
 				7C83326221ED5880001E541E /* Protocol */,
 				7C83326121ED587A001E541E /* Extension */,
 				7C83326021ED5872001E541E /* Closure */,
@@ -193,6 +198,15 @@
 				1BA0F1E11F9ABA580046B567 /* Info.plist */,
 			);
 			path = SwiftUITests;
+			sourceTree = "<group>";
+		};
+		1BB2AA64250F390400B5D62E /* Unlock */ = {
+			isa = PBXGroup;
+			children = (
+				1BB2AA65250F392800B5D62E /* IWAuthenticatorManager.swift */,
+				1BB2AA67250F399300B5D62E /* IWAuthenticatorConfig.swift */,
+			);
+			path = Unlock;
 			sourceTree = "<group>";
 		};
 		7C83325E21ED585E001E541E /* Grammer */ = {
@@ -441,12 +455,14 @@
 				7C452E0921EEEF2200A75F20 /* Dog.swift in Sources */,
 				1B35CFAC21EB5F890054878E /* ExtensionViewController.swift in Sources */,
 				7C452E0521EEC7FB00A75F20 /* MyClass.swift in Sources */,
+				1BB2AA68250F399300B5D62E /* IWAuthenticatorConfig.swift in Sources */,
 				1B35CFAE21EB5F980054878E /* ProtocolViewController.swift in Sources */,
 				7C452E0B21EEF0F100A75F20 /* Cat.swift in Sources */,
 				1B2FBDD321ECAD1B0078FAD7 /* GrammerViewController.swift in Sources */,
 				1BA0F1C21F9ABA570046B567 /* ClosureViewController.swift in Sources */,
 				1B35CFA921EB5B7A0054878E /* MenuViewController.swift in Sources */,
 				7C83325D21ED5807001E541E /* RxSwiftViewController.swift in Sources */,
+				1BB2AA66250F392800B5D62E /* IWAuthenticatorManager.swift in Sources */,
 				7C83326421ED58A5001E541E /* ViewModel.swift in Sources */,
 				1BA0F1C01F9ABA570046B567 /* AppDelegate.swift in Sources */,
 			);
