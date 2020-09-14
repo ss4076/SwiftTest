@@ -1,5 +1,5 @@
 //
-//  IWAuthenticatorManager.swift
+//  IWAuthenticatorConfig.swift
 //  SwiftTest
 //
 //  Created by raonsecure on 2020/09/14.
@@ -8,9 +8,11 @@
 
 import UIKit
 
-class IWAuthenticatorManager: NSObject {
+class IWAuthenticatorConfig: NSObject {
 
-    func reg() -> Void {
+    static func setAuthMessage() -> NSString {
         
+        return ""
     }
+    
 }

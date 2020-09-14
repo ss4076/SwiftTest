@@ -2,7 +2,7 @@
 //  IWAuthenticatorManager.swift
 //  SwiftTest
 //
-//  Created by raonsecure on 2020/09/10.
+//  Created by raonsecure on 2020/09/14.
 //  Copyright © 2020 djpark. All rights reserved.
 //
 
@@ -10,21 +10,14 @@ import UIKit
 
 class IWAuthenticatorManager: NSObject {
 
-    func registration() -> Void {
+    func reg() -> Void {
         
-        var str : String = "#registration!"
-        print("\(str)")
+    }
+    func auth() -> Void {
+        
+    }
+    func dereg() -> Void {
+        
     }
     
-    func authentication() -> Void {
-        
-        var str : String = "#authentication!"
-        print("\(str)")
-    }
-    
-    func deregistration() -> Void {
-        
-        var str : String = "#deregistration!"
-        print("\(str)")
-    }
 }

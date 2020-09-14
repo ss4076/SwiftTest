@@ -30,7 +30,6 @@
 		1BFE0436250A1E1700060B95 /* FunctionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFE0427250A1E1700060B95 /* FunctionViewController.swift */; };
 		1BFE0437250A1E1700060B95 /* MyClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFE0429250A1E1700060B95 /* MyClass.swift */; };
 		1BFE0438250A1E1700060B95 /* IWAuthenticatorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFE042B250A1E1700060B95 /* IWAuthenticatorManager.swift */; };
-		A7684D50BBBA02200D70664E /* Pods_SwiftTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 776908013912931CA2D89627 /* Pods_SwiftTest.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +79,7 @@
 		1BFE0427250A1E1700060B95 /* FunctionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunctionViewController.swift; sourceTree = "<group>"; };
 		1BFE0429250A1E1700060B95 /* MyClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyClass.swift; sourceTree = "<group>"; };
 		1BFE042B250A1E1700060B95 /* IWAuthenticatorManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IWAuthenticatorManager.swift; sourceTree = "<group>"; };
+>>>>>>> release/qa_v1.0
 		776908013912931CA2D89627 /* Pods_SwiftTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C957A9E72D770B2EB2B52F5F /* Pods-SwiftTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftTest/Pods-SwiftTest.release.xcconfig"; sourceTree = "<group>"; };
 		F48B3A883F1A7EF2D4784696 /* Pods-SwiftTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftTest/Pods-SwiftTest.debug.xcconfig"; sourceTree = "<group>"; };
@@ -141,6 +141,7 @@
 				1BFE0420250A1E1700060B95 /* rxSwift */,
 				1BFE041B250A1E1700060B95 /* RxSwiftViewController.swift */,
 				1BFE042A250A1E1700060B95 /* Unlock */,
+>>>>>>> release/qa_v1.0
 			);
 			path = Menu;
 			sourceTree = "<group>";
