@@ -16,6 +16,7 @@
 		1BA0F1D51F9ABA580046B567 /* SwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA0F1D41F9ABA580046B567 /* SwiftTests.swift */; };
 		1BA0F1E01F9ABA580046B567 /* SwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA0F1DF1F9ABA580046B567 /* SwiftUITests.swift */; };
 		1BA0F1EE1F9AC2FC0046B567 /* ReadMe.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1BA0F1ED1F9AC2FC0046B567 /* ReadMe.strings */; };
+		1BB2AA6B250F3D9600B5D62E /* IWAuthenticatorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB2AA6A250F3D9600B5D62E /* IWAuthenticatorManager.swift */; };
 		1BFE042C250A1E1700060B95 /* GrammerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFE041A250A1E1600060B95 /* GrammerViewController.swift */; };
 		1BFE042D250A1E1700060B95 /* RxSwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFE041B250A1E1700060B95 /* RxSwiftViewController.swift */; };
 		1BFE042E250A1E1700060B95 /* IWAuthenticatorSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFE041D250A1E1700060B95 /* IWAuthenticatorSetting.swift */; };
@@ -65,6 +66,7 @@
 		1BA0F1DF1F9ABA580046B567 /* SwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUITests.swift; sourceTree = "<group>"; };
 		1BA0F1E11F9ABA580046B567 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1BA0F1ED1F9AC2FC0046B567 /* ReadMe.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = ReadMe.strings; sourceTree = "<group>"; };
+		1BB2AA6A250F3D9600B5D62E /* IWAuthenticatorManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IWAuthenticatorManager.swift; sourceTree = "<group>"; };
 		1BFE041A250A1E1600060B95 /* GrammerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GrammerViewController.swift; sourceTree = "<group>"; };
 		1BFE041B250A1E1700060B95 /* RxSwiftViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxSwiftViewController.swift; sourceTree = "<group>"; };
 		1BFE041D250A1E1700060B95 /* IWAuthenticatorSetting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IWAuthenticatorSetting.swift; sourceTree = "<group>"; };
@@ -168,6 +170,7 @@
 		1BA0F1BE1F9ABA570046B567 /* Swift */ = {
 			isa = PBXGroup;
 			children = (
+				1BB2AA69250F3D8600B5D62E /* Unlock */,
 				1B35CFAA21EB5F670054878E /* Menu */,
 				1BA0F1BF1F9ABA570046B567 /* AppDelegate.swift */,
 				1B35CFA821EB5B7A0054878E /* MenuViewController.swift */,
@@ -197,6 +200,14 @@
 				1BA0F1E11F9ABA580046B567 /* Info.plist */,
 			);
 			path = SwiftUITests;
+			sourceTree = "<group>";
+		};
+		1BB2AA69250F3D8600B5D62E /* Unlock */ = {
+			isa = PBXGroup;
+			children = (
+				1BB2AA6A250F3D9600B5D62E /* IWAuthenticatorManager.swift */,
+			);
+			path = Unlock;
 			sourceTree = "<group>";
 		};
 		1BFE041C250A1E1700060B95 /* Config */ = {
@@ -455,6 +466,7 @@
 				1BA0F1C01F9ABA570046B567 /* AppDelegate.swift in Sources */,
 				1BFE0431250A1E1700060B95 /* ViewModel.swift in Sources */,
 				1BFE0436250A1E1700060B95 /* FunctionViewController.swift in Sources */,
+				1BB2AA6B250F3D9600B5D62E /* IWAuthenticatorManager.swift in Sources */,
 				1BFE0433250A1E1700060B95 /* Dog.swift in Sources */,
 				1BFE042C250A1E1700060B95 /* GrammerViewController.swift in Sources */,
 			);
