@@ -10,4 +10,7 @@ import UIKit
 
 class IWAuthenticatorManager: NSObject {
 
+    func reg() -> Void {
+        
+    }
 }
