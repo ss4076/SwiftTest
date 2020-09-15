@@ -10,4 +10,13 @@ import UIKit
 
 class UnlockViewController: NSObject {
 
+
+    func a() ->Void {
+
+    }
+    
+    func b() -> Void {
+
+        
+    }
 }
