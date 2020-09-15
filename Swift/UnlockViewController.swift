@@ -9,5 +9,8 @@
 import UIKit
 
 class UnlockViewController: NSObject {
-
+    
+    func b() -> Void {
+        
+    }
 }
