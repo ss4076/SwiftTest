@@ -10,4 +10,7 @@ import UIKit
 
 class UnlockViewController: NSObject {
 
+    func a() ->Void {
+        
+    }
 }
