@@ -20,4 +20,9 @@ class UnlockViewController: NSObject {
         
         print("b")
     }
+    
+    func c() -> Void {
+        
+        
+    }
 }
