@@ -12,11 +12,12 @@ class UnlockViewController: NSObject {
 
 
     func a() ->Void {
-
+        
+        print("a")
     }
     
     func b() -> Void {
-
         
+        print("b")
     }
 }
