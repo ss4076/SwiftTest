@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1B1CF19E201D74060093BCCB /* TodoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1CF19D201D74060093BCCB /* TodoManager.swift */; };
 		1B35CFA921EB5B7A0054878E /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B35CFA821EB5B7A0054878E /* MenuViewController.swift */; };
+		1B9D3112251087FE00F49FF3 /* UnlockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9D3111251087FE00F49FF3 /* UnlockViewController.swift */; };
 		1BA0F1C01F9ABA570046B567 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA0F1BF1F9ABA570046B567 /* AppDelegate.swift */; };
 		1BA0F1C51F9ABA570046B567 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BA0F1C31F9ABA570046B567 /* Main.storyboard */; };
 		1BA0F1C71F9ABA570046B567 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BA0F1C61F9ABA570046B567 /* Assets.xcassets */; };
@@ -52,6 +53,7 @@
 /* Begin PBXFileReference section */
 		1B1CF19D201D74060093BCCB /* TodoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoManager.swift; sourceTree = "<group>"; };
 		1B35CFA821EB5B7A0054878E /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		1B9D3111251087FE00F49FF3 /* UnlockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnlockViewController.swift; sourceTree = "<group>"; };
 		1BA0F1BC1F9ABA570046B567 /* SwiftTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BA0F1BF1F9ABA570046B567 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1BA0F1C41F9ABA570046B567 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -176,6 +178,7 @@
 				1BA0F1C81F9ABA570046B567 /* LaunchScreen.storyboard */,
 				1BA0F1CB1F9ABA570046B567 /* Info.plist */,
 				1BA0F1ED1F9AC2FC0046B567 /* ReadMe.strings */,
+				1B9D3111251087FE00F49FF3 /* UnlockViewController.swift */,
 			);
 			path = Swift;
 			sourceTree = "<group>";
@@ -442,6 +445,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B9D3112251087FE00F49FF3 /* UnlockViewController.swift in Sources */,
 				1BFE0430250A1E1700060B95 /* ProtocolViewController.swift in Sources */,
 				1BFE042F250A1E1700060B95 /* ClosureViewController.swift in Sources */,
 				1BFE0432250A1E1700060B95 /* ExtensionViewController.swift in Sources */,
