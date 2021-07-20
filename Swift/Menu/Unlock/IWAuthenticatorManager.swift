@@ -22,5 +22,8 @@ class IWAuthenticatorManager: NSObject {
     func dereg() -> Void {
         
     }
+    func bugfix() ->Void {
+        // 수정함
+    }
     
 }
