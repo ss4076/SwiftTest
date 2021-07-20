@@ -34,5 +34,7 @@ class IWAuthenticatorManager: NSObject {
     func one() -> Void {
         
     }
-    
+    func two() -> Void {
+        
+    }
 }
