@@ -11,10 +11,10 @@ import UIKit
 class IWAuthenticatorManager: NSObject {
 
     func reg() -> Void {
-        
+        // reg 침범
     }
     func auth() -> Void {
-        
+        // auth 코드1 추가
     }
     func dereg() -> Void {
         
