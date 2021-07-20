@@ -35,6 +35,6 @@ class IWAuthenticatorManager: NSObject {
         
     }
     func two() -> Void {
-        // 2 개발
+        
     }
 }
