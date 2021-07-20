@@ -20,7 +20,7 @@ class IWAuthenticatorManager: NSObject {
         
     }
     func bugfix() ->Void {
-        
+        // 수정함
     }
     
 }
