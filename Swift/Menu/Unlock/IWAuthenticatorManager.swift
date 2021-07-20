@@ -23,7 +23,7 @@ class IWAuthenticatorManager: NSObject {
         // qa auth 수정2
     }
     func dereg() -> Void {
-        
+        // 끝
     }
     func bugfix() ->Void {
         // 수정함
