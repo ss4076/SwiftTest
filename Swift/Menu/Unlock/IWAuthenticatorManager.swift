@@ -12,6 +12,7 @@ class IWAuthenticatorManager: NSObject {
 
     func reg() -> Void {
         // 코드를 구현하는 중...
+        // 코드1 구현중...
     }
     func auth() -> Void {
         
