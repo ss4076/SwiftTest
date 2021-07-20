@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		1B1CF19E201D74060093BCCB /* TodoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1CF19D201D74060093BCCB /* TodoManager.swift */; };
 		1B35CFA921EB5B7A0054878E /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B35CFA821EB5B7A0054878E /* MenuViewController.swift */; };
+		1B7286A8255BF785008272F6 /* Combine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B7286A7255BF785008272F6 /* Combine.framework */; };
+		1B7286AB255BF8BB008272F6 /* MyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7286AA255BF8BB008272F6 /* MyViewModel.swift */; };
 		1B9D3112251087FE00F49FF3 /* UnlockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9D3111251087FE00F49FF3 /* UnlockViewController.swift */; };
 		1BA0F1C01F9ABA570046B567 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA0F1BF1F9ABA570046B567 /* AppDelegate.swift */; };
 		1BA0F1C51F9ABA570046B567 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BA0F1C31F9ABA570046B567 /* Main.storyboard */; };
@@ -21,7 +23,7 @@
 		1BFE042D250A1E1700060B95 /* RxSwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFE041B250A1E1700060B95 /* RxSwiftViewController.swift */; };
 		1BFE042E250A1E1700060B95 /* IWAuthenticatorSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFE041D250A1E1700060B95 /* IWAuthenticatorSetting.swift */; };
 		1BFE042F250A1E1700060B95 /* ClosureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFE041E250A1E1700060B95 /* ClosureViewController.swift */; };
-		1BFE0430250A1E1700060B95 /* ProtocolViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFE041F250A1E1700060B95 /* ProtocolViewController.swift */; };
+		1BFE0430250A1E1700060B95 /* CombineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFE041F250A1E1700060B95 /* CombineViewController.swift */; };
 		1BFE0431250A1E1700060B95 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFE0421250A1E1700060B95 /* ViewModel.swift */; };
 		1BFE0432250A1E1700060B95 /* ExtensionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFE0422250A1E1700060B95 /* ExtensionViewController.swift */; };
 		1BFE0433250A1E1700060B95 /* Dog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFE0424250A1E1700060B95 /* Dog.swift */; };
@@ -53,6 +55,8 @@
 /* Begin PBXFileReference section */
 		1B1CF19D201D74060093BCCB /* TodoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoManager.swift; sourceTree = "<group>"; };
 		1B35CFA821EB5B7A0054878E /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		1B7286A7255BF785008272F6 /* Combine.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Combine.framework; path = System/Library/Frameworks/Combine.framework; sourceTree = SDKROOT; };
+		1B7286AA255BF8BB008272F6 /* MyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyViewModel.swift; sourceTree = "<group>"; };
 		1B9D3111251087FE00F49FF3 /* UnlockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnlockViewController.swift; sourceTree = "<group>"; };
 		1BA0F1BC1F9ABA570046B567 /* SwiftTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BA0F1BF1F9ABA570046B567 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -71,7 +75,7 @@
 		1BFE041B250A1E1700060B95 /* RxSwiftViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxSwiftViewController.swift; sourceTree = "<group>"; };
 		1BFE041D250A1E1700060B95 /* IWAuthenticatorSetting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IWAuthenticatorSetting.swift; sourceTree = "<group>"; };
 		1BFE041E250A1E1700060B95 /* ClosureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClosureViewController.swift; sourceTree = "<group>"; };
-		1BFE041F250A1E1700060B95 /* ProtocolViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtocolViewController.swift; sourceTree = "<group>"; };
+		1BFE041F250A1E1700060B95 /* CombineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CombineViewController.swift; sourceTree = "<group>"; };
 		1BFE0421250A1E1700060B95 /* ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		1BFE0422250A1E1700060B95 /* ExtensionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionViewController.swift; sourceTree = "<group>"; };
 		1BFE0424250A1E1700060B95 /* Dog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dog.swift; sourceTree = "<group>"; };
@@ -90,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B7286A8255BF785008272F6 /* Combine.framework in Frameworks */,
 				BD081F3D82E410E2DE0B9942 /* Pods_SwiftTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -114,6 +119,7 @@
 		09BE16B4A2B153166FCC923D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1B7286A7255BF785008272F6 /* Combine.framework */,
 				776908013912931CA2D89627 /* Pods_SwiftTest.framework */,
 			);
 			name = Frameworks;
@@ -130,6 +136,7 @@
 		1B35CFAA21EB5F670054878E /* Menu */ = {
 			isa = PBXGroup;
 			children = (
+				1B7286A9255BF89B008272F6 /* Combine */,
 				1BFE0428250A1E1700060B95 /* Closure */,
 				1BFE041E250A1E1700060B95 /* ClosureViewController.swift */,
 				1BFE041C250A1E1700060B95 /* Config */,
@@ -137,12 +144,20 @@
 				1BFE0427250A1E1700060B95 /* FunctionViewController.swift */,
 				1BFE0423250A1E1700060B95 /* Grammer */,
 				1BFE041A250A1E1600060B95 /* GrammerViewController.swift */,
-				1BFE041F250A1E1700060B95 /* ProtocolViewController.swift */,
 				1BFE0420250A1E1700060B95 /* rxSwift */,
 				1BFE041B250A1E1700060B95 /* RxSwiftViewController.swift */,
 				1BFE042A250A1E1700060B95 /* Unlock */,
 			);
 			path = Menu;
+			sourceTree = "<group>";
+		};
+		1B7286A9255BF89B008272F6 /* Combine */ = {
+			isa = PBXGroup;
+			children = (
+				1B7286AA255BF8BB008272F6 /* MyViewModel.swift */,
+				1BFE041F250A1E1700060B95 /* CombineViewController.swift */,
+			);
+			path = Combine;
 			sourceTree = "<group>";
 		};
 		1BA0F1B31F9ABA570046B567 = {
@@ -323,7 +338,7 @@
 				TargetAttributes = {
 					1BA0F1BB1F9ABA570046B567 = {
 						CreatedOnToolsVersion = 9.0;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 					};
 					1BA0F1CF1F9ABA580046B567 = {
 						CreatedOnToolsVersion = 9.0;
@@ -446,7 +461,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B9D3112251087FE00F49FF3 /* UnlockViewController.swift in Sources */,
-				1BFE0430250A1E1700060B95 /* ProtocolViewController.swift in Sources */,
+				1BFE0430250A1E1700060B95 /* CombineViewController.swift in Sources */,
 				1BFE042F250A1E1700060B95 /* ClosureViewController.swift in Sources */,
 				1BFE0432250A1E1700060B95 /* ExtensionViewController.swift in Sources */,
 				1BFE0434250A1E1700060B95 /* Cat.swift in Sources */,
@@ -458,6 +473,7 @@
 				1B35CFA921EB5B7A0054878E /* MenuViewController.swift in Sources */,
 				1BA0F1C01F9ABA570046B567 /* AppDelegate.swift in Sources */,
 				1BFE0431250A1E1700060B95 /* ViewModel.swift in Sources */,
+				1B7286AB255BF8BB008272F6 /* MyViewModel.swift in Sources */,
 				1BFE0436250A1E1700060B95 /* FunctionViewController.swift in Sources */,
 				1BFE0433250A1E1700060B95 /* Dog.swift in Sources */,
 				1BFE042C250A1E1700060B95 /* GrammerViewController.swift in Sources */,
@@ -628,15 +644,15 @@
 			baseConfigurationReference = F48B3A883F1A7EF2D4784696 /* Pods-SwiftTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: dong jun park (WCGJVE94PF)";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = 2DRRGUP83C;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GZZD25P96B;
 				INFOPLIST_FILE = Swift/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.raonsecure.gotrustid.business;
+				PRODUCT_BUNDLE_IDENTIFIER = com.raonsecure.oneaccessex;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = GO_TRUST_DEV_2019;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -647,15 +663,15 @@
 			baseConfigurationReference = C957A9E72D770B2EB2B52F5F /* Pods-SwiftTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Softsecurity Co., Ltd.";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = 2DRRGUP83C;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GZZD25P96B;
 				INFOPLIST_FILE = Swift/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.raonsecure.gotrustid.business;
+				PRODUCT_BUNDLE_IDENTIFIER = com.raonsecure.oneaccessex;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = GO_TRUST_DIST_2019;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
