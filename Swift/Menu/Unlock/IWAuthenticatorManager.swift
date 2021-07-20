@@ -11,7 +11,7 @@ import UIKit
 class IWAuthenticatorManager: NSObject {
 
     func reg() -> Void {
-        
+        // reg 침범
     }
     func auth() -> Void {
         
