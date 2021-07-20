@@ -20,6 +20,7 @@ class IWAuthenticatorManager: NSObject {
     func auth() -> Void {
         // auth 코드1 추가
         // qa auth 수정
+        // qa auth 수정2
     }
     func dereg() -> Void {
         
