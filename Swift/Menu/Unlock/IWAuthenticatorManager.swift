@@ -21,6 +21,7 @@ class IWAuthenticatorManager: NSObject {
     }
     func dereg() -> Void {
         // dereg 코드1 추가
+        // 예솔 코드 추가
     }
     
 }
