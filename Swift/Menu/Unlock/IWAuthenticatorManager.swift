@@ -11,7 +11,7 @@ import UIKit
 class IWAuthenticatorManager: NSObject {
 
     func reg() -> Void {
-        
+        // 코드를 구현하는 중...
     }
     func auth() -> Void {
         
