@@ -31,5 +31,8 @@ class IWAuthenticatorManager: NSObject {
         // 예솔 코드 추가
 
     }
+    func one() -> Void {
+        
+    }
     
 }
