@@ -26,7 +26,7 @@ class IWAuthenticatorManager: NSObject {
 
         // 개발 1 진행중
         // 개발 완료
-        //reverse test
+
     }
     
     func common()-> Int {
