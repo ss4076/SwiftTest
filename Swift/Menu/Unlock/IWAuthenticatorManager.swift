@@ -17,10 +17,16 @@ class IWAuthenticatorManager: NSObject {
         // qa 수정 1
     }
     
+    func auth() -> Void {
+        // 개발완료
+    }
+    
     // 해지 - 진호
     func dereg() -> Void {
-        // 개발완료
-        // ㄴㅇㄹㅇ너린ㅇㅁㄹㅇㄴㅁㄹㄴㅇㅁㄹ
+
+        // 개발 1 진행중
+        // 개발 완료
+
     }
     
     func common()-> Int {
