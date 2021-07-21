@@ -16,6 +16,10 @@ class IWAuthenticatorManager: NSObject {
         // 개발 완료
     }
     
+    func auth() -> Void {
+        // 개발완료
+    }
+    
     // 해지 - 진호
     func dereg() -> Void {
 
