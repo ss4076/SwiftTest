@@ -19,6 +19,6 @@ class IWAuthenticatorManager: NSObject {
     }
     // 해지
     func dereg() -> Void {
-        
+        // 개발완료
     }
 }
