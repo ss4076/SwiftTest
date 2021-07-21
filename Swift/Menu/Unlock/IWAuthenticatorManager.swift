@@ -20,6 +20,8 @@ class IWAuthenticatorManager: NSObject {
     // 해지 - 진호
     func dereg() -> Void {
         // 개발완료
+        // ㄴㅇㄹㅇ너린ㅇㅁㄹㅇㄴㅁㄹㄴㅇㅁㄹ
+        
     }
     
     func common()-> Int {
