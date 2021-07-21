@@ -9,24 +9,22 @@
 import UIKit
 
 class IWAuthenticatorManager: NSObject {
-
+    // 등록
     func reg() -> Void {
-        
-        // 코드를 구현하는 중...
-        // 코드1 구현중...
-        // reg 침범
-        // qa - reg 수정
-    }
-    func auth() -> Void {
-        // auth 코드1 추가
-        // qa auth 수정
-        // qa auth 수정2
-    }
-    func dereg() -> Void {
-        // 끝
-    }
-    func bugfix() ->Void {
-        // 수정함
+        // 기능1 개발
+        // 기능2 개발
+        // 개발 완료
+        // qa 수정 1
     }
     
+    // 해지 - 진호
+    func dereg() -> Void {
+        // 개발완료
+        // ㄴㅇㄹㅇ너린ㅇㅁㄹㅇㄴㅁㄹㄴㅇㅁㄹ
+    }
+    
+    func common()-> Int {
+        // 등록/ 인증/ 해지 시 사용할 api
+        return 3;
+    }
 }
