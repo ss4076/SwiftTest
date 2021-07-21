@@ -18,8 +18,9 @@ class IWAuthenticatorManager: NSObject {
     
     // 해지 - 진호
     func dereg() -> Void {
-        // 개발완료
+
         // 개발 1 진행중
+        // 개발 완료
     }
     
     func common()-> Int {
