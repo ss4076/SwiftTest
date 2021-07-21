@@ -13,11 +13,9 @@ class IWAuthenticatorManager: NSObject {
     func reg() -> Void {
         // 기능1 개발
         // 기능2 개발
+        // 개발 완료
     }
-    // 인증 - 지원
-    func auth() -> Void {
-        
-    }
+    
     // 해지 - 진호
     func dereg() -> Void {
         
@@ -25,6 +23,6 @@ class IWAuthenticatorManager: NSObject {
     
     func common()-> Int {
         // 등록/ 인증/ 해지 시 사용할 api
-        return 1;
+        return 2;
     }
 }
