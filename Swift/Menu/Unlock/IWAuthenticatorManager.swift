@@ -21,9 +21,4 @@ class IWAuthenticatorManager: NSObject {
     func dereg() -> Void {
         
     }
-    
-    func common()-> Int {
-        // 등록/ 인증/ 해지 시 사용할 api
-        return 1;
-    }
 }
