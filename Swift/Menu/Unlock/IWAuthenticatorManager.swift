@@ -14,6 +14,7 @@ class IWAuthenticatorManager: NSObject {
         // 기능1 개발
         // 기능2 개발
         // 개발 완료
+        // qa 수정 1
     }
     
     // 해지 - 진호
