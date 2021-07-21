@@ -27,4 +27,9 @@ class IWAuthenticatorManager: NSObject {
         // 등록/ 인증/ 해지 시 사용할 api
         return 3;
     }
+    
+    func add()-> Int {
+        // 고객사 요구사항
+        return 3;
+    }
 }
