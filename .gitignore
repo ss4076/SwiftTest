@@ -17,8 +17,6 @@ Pods/
 build/
 DerivedData/
 
-*.txt
-
 ## Various settings
 *.pbxuser
 !default.pbxuser
